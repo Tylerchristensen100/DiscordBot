@@ -10,7 +10,7 @@ client.on('message', msg => {
     
  if(msg.content.toLowerCase() === 'spam')
  {
-     for(var i=0;i < 10; i++){
+     for(var i=0;i < 5; i++){
         msg.channel.send('SPAM');
      }
  }
@@ -28,10 +28,16 @@ client.on('message', msg => {
          msg.reply('...');
      }
  }
- else {
-     msg.reply('Good luck with that!');
+ else if(msg.content.toLowerCase() ==="date"){
+    msg.reply(getDate());
+
  }
  
  });
+
+ var http = require('http');
+setInterval(() => {
+    http.get('http://discordbot181.herokuapp.com/');
+}, 1000*60*15);
 //Client token from bot application page
-client.login('NzA1ODUzNzIxNjQ4ODI0Mzgw.XqyFAg.zcBCLEc9ZIY8CYUZxMWBVw__oZc');
+client.login('NzA1ODUzNzIxNjQ4ODI0Mzgw.XqxwGQ.4t8XDOZODAEmGDQzp4qdFb6FdF8');
