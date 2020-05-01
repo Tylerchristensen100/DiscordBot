@@ -34,4 +34,4 @@ client.on('message', msg => {
  
  });
 //Client token from bot application page
-client.login('NzA1ODUzNzIxNjQ4ODI0Mzgw.XqxwGQ.4t8XDOZODAEmGDQzp4qdFb6FdF8');
+client.login('NzA1ODUzNzIxNjQ4ODI0Mzgw.XqyFAg.zcBCLEc9ZIY8CYUZxMWBVw__oZc');
